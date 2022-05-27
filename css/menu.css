@@ -1,0 +1,386 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: #fff;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .banner{
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header h1{
+        font-size: 80px;
+        font-family: Merienda One, sans-serif;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: #f1f1f1;
+        margin: 30px 0;
+        text-shadow: #000 0 0 10px;
+
+    }
+
+    .chopsticks img {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 11%;
+        color: #fff;
+        animation: rotation 8s linear infinite;
+        
+    }
+    
+    
+
+    h2{
+
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 90px;
+        font-family: Merienda One, sans-serif;
+        color: #f1f1f1;
+        text-shadow: #000 0 0 10px;
+    }
+
+    h3{
+        font-size: 4rem;
+        font-family: Merienda One, sans-serif;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        background: #000000;
+        color: #f1f1f1;
+
+    }
+
+    .menu-container .card-container{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    h4{
+        font-size: 60px;
+        font-family: Merienda One, sans-serif;
+        color: #000;
+        margin: 10px 0;
+    }
+    
+
+    li{
+        font-size: 25px;
+        font-family: Yomogi, sans-serif;
+        color: #000;
+        margin: 5px 10px;
+        list-style-type: none;
+    }
+
+
+
+    /* first and second card  */
+
+    
+
+    .card1, .card2 {
+        display: flex;
+        background: #000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card1 .card2, img{
+        width: 595px;
+        height: 400px;
+        
+    }
+    
+
+    .menu1, .menu2{
+        width: 595px;
+        height: 800px;
+        text-align: center;
+        background:#E6ECF6;
+
+    }
+
+    .menu1 .menu2, p{
+        font-size: 25px;
+        font-family: Yomogi, sans-serif;
+        color: #000;
+        margin: 25px 10px;
+    }
+
+    .menu2 p{
+        margin: 10px 10px;
+    }
+
+    /* third and fourth card*/
+
+
+    .card3, .card4 {
+        display: flex;
+        background: #000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card3 .card4, img{
+        width: 595px;
+        height: 400px;
+        
+    }
+    
+
+    .menu3, .menu4{
+        width: 595px;
+        height: 800px;
+        text-align: center;
+        background:#E6ECF6;
+
+    }
+
+    .menu4 li{
+        margin: 15px 10px;
+    }
+
+
+    /* contact form */
+
+
+    .section-contact {
+        padding-bottom: 50px;
+    }
+
+    .section-contact h2 {
+        text-align: center;
+        color: #000;
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 50px;
+        padding: 70px 0 0 0;
+    }
+    
+    .container-form {
+        position: relative;
+        margin: 5px auto;
+        width: 90%;
+        border-radius: 3px;
+        padding: 20px 0;
+        outline: none;
+        border: none;
+    }
+
+    .container-form::before{
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        bottom: 0px;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    .container-form::after{
+        position: absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+
+    .container-form:hover::before{
+        height: 100%;   
+        width: 100%;
+        border: 5px solid #000;
+        border-right: none;
+        border-bottom: none;
+        transition: height 0.5s linear, width 0.5s linear  0.5s ;
+    }
+
+    .container-form:hover::after{
+        height: 100%;
+        width: 100%;
+        border: 5px solid #000;
+        border-left: none;
+        border-top: none;
+        transition: height 0.5s linear, width 0.5s linear 0.5s;
+        z-index: 0;
+    }
+
+    .form-bloc{
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    .form-groupe {
+        position: relative;
+        margin-bottom: 45px;
+        font-family: Merienda One, sans-serif;
+
+        z-index: 9999;
+    }
+    .form-groupe label {
+        color: #aaa;
+        font-size: 20px;
+    }
+    .form-groupe input {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 3px solid #aaa;
+        color: #666;
+        font-size: 20px;
+    }
+
+    .form-groupe ::placeholder{
+        font-family: Yomogi, sans-serif;
+    }
+
+
+    .custom-select{
+        width: 20%;
+        margin: 20px 0px;
+        padding: 10px 0px;
+        border: none;
+        outline: none;
+        border: 3px solid #aaa;
+        border-radius: 5px;
+        color: #666;
+        font-size: 20px;
+        font-family: Merienda One, sans-serif;
+    }
+
+    
+    textarea {
+        width: 100%;
+        height: 200px;
+        border: none;
+        border: 3px solid #aaa;
+        border-radius: 3px;
+        padding: 5px;
+        resize: none;
+        outline: none;
+        font-size: 20px;
+        background: #f1f1f1;
+        z-index: 10;
+        font-family: Yomogi, sans-serif;
+
+    }
+    
+    .form-groupe:nth-child(4) {
+        margin-bottom: 25px;
+    }
+    
+    .form-groupe .button-sub {
+        display: block;
+        width: auto;
+        padding: 15px 60px;
+        border: 3px solid rgb(144,144,144);
+        border-radius: 9999px;
+        background-image: linear-gradient(to right, transparent 50%, rgb(33, 33, 33) 50%, rgb(101, 101, 101));
+        background-size: 200%;
+        color: #333;
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        font-family: Merienda One ,sans-serif;
+    }
+    .form-groupe .button-sub:hover {
+        color: #fff;
+        background-position: 100%;
+        border: 3px solid #fff;
+    }
+
+    footer {
+        /* border-top: 1px solid #333; */
+        width: 100%;
+        height: 100px;
+        background: #000;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer button{
+        padding: 15px;
+        border: none;
+        outline: none;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    button a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Merienda One, sans-serif;
+
+    }
+
+    /* anim line  */
+
+
+    @keyframes rotation{
+        0%{
+            
+            transform: translate(-60%, -50%)  rotate(0deg);
+        }
+        100%{
+            transform: translate(-60%, -50%) rotate(360deg);
+        }
+    }
+
+    /* Responsive */
+
+    @media screen and (min-width: 375px) and (max-width: 2350px){
+        .card2 img{
+        order: 1;
+    }
+
+    .card3 img{
+        order: -1;
+    }
+    h3{
+        font-size: 3rem;
+        height: auto;
+    }
+
+    }
+
+
+    
