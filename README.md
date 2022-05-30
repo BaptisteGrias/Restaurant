@@ -15,5 +15,6 @@ menu and formulaire
 
 ![Capture d'écran 26 05 2022 à 17 28 58 PM](https://user-images.githubusercontent.com/79455970/170606995-ce3ef2c2-29de-4e93-9838-b5655e7ed864.png)
 
+Responsive need to be add and done
 
 Made with the courses L'école du web 
